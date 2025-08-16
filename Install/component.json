@@ -1,0 +1,86 @@
+{
+	"name" : "Mutual Fund Patterns",
+	"route" : "mf/tools/patterns",
+	"description" : "<p>Mutual Fund Extract Patterns</p>",
+	"module_type" : "components",
+	"app_type" : "fintech",
+	"category" : "mutualfunds",
+	"version" : "0.0.0",
+	"repo" : "https://github.com/sp-fintech-mutualfunds/fintech-components-mutualfunds-mftoolspatterns",
+	"class" : "Apps\\Fintech\\Components\\Mf\\Tools\\Patterns\\PatternsComponent",
+	"dependencies" : 
+	{
+		"core" : 
+		{
+			"name" : "Core",
+			"version" : "0.0.0-rc.15",
+			"repo" : "https://github.com/sp-framework/core"
+		},
+		"apptype" : 
+		{
+			"name" : "Fintech",
+			"version" : "0.3.0",
+			"repo" : "https://github.com/sp-fintech/fintech"
+		},
+		"packages" : 
+		[
+			{
+				"name" : "MfToolsPatterns",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-fintech-mutualfunds/fintech-packages-mutualfunds-mftoolspatterns"
+			}
+		],
+		"middlewares" : [],
+		"views" : 
+		[
+			{
+				"name" : "MfToolsPatterns",
+				"version" : "0.0.0",
+				"repo" : "https://github.com/sp-fintech-mutualfunds/fintech-views-mutualfunds-default-mftoolspatterns"
+			}
+		],
+		"externals" : 
+		{
+			"composer" : 
+			{
+				"require" : []
+			},
+			"config" : 
+			{
+				"allow-plugins" : []
+			},
+			"extra" : 
+			{
+				"patches" : []
+			}
+		}
+	},
+	"menu" : 
+	{
+		"mf" : 
+		{
+			"title" : "mf",
+			"icon" : "file-invoice-dollar",
+			"childs" : 
+			{
+				"tools" : 
+				{
+					"title" : "tools",
+					"icon" : "screwdriver-wrench",
+					"childs" : 
+					{
+						"patterns" : 
+						{
+							"title" : "patterns",
+							"icon" : "arrow-trend-up",
+							"link" : "mf/tools/patterns"
+						}
+					}
+				}
+			}
+		},
+		"seq" : "0"
+	},
+	"settings" : [],
+	"widgets" : []
+}
